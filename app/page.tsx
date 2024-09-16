@@ -1,3 +1,4 @@
+import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import { FloatingNav } from "@/components/FloatingNavbar";
 import Grid from "@/components/Grid";
@@ -16,6 +17,7 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <Experience />
+        <Approach />
       </div>
     </main>
   );
