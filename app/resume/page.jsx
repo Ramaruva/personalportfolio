@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-  FaNodeJs,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -18,8 +11,8 @@ import {
   TooltipTrigger,
 } from "@radix-ui/react-tooltip";
 
-import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { motion } from "framer-motion";
+import { ScrollArea } from "@/components/ui/scroll-area";
 //about data
 const data = {
   title: "About me",
@@ -178,21 +171,23 @@ const Resume = () => {
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold ">{experienceData.title}</h3>
+                <h3 className="text-4xl font-bold">{experienceData.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {experienceData.description}
+                  {educationData.description}
                 </p>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experienceData.items.map((item, index) => {
                       return (
                         <li
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl 
-                          flex flex-col justify-center items-center lg:items-start gap-1"
                           key={index}
+                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          <h3
+                            className="text-xl max-w-[260px] min-h-[60px]
+                            text-center lg:text-left"
+                          >
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
@@ -208,38 +203,13 @@ const Resume = () => {
             </TabsContent>
             {/* education */}
             <TabsContent value="education" className="w-full">
-            <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold ">{educationData.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {educationData.description}
-                </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {educationData.items.map((item, index) => {
-                      return (
-                        <li
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl 
-                          flex flex-col justify-center items-center lg:items-start gap-1"
-                          key={index}
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                            {item.degree}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.institution}</p>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
-              </div>
+              education
             </TabsContent>
+            {/* skills */}
             <TabsContent value="skills" className="w-full">
               Skills
             </TabsContent>
+            {/* about */}
             <TabsContent value="about" className="w-full">
               About
             </TabsContent>
