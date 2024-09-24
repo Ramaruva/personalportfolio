@@ -7,28 +7,28 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "lalalhd ahaha anaha ahanaha ahah ah some decription leit aalhahd",
+      "Building responsive, user-friendly websites using React.js, Angular, and Node.js, with seamless back-end integration.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX",
+    title: "Software Development",
     description:
-      "lalalhd ahaha anaha ahanaha ahah ah some decription leit aalhahd",
+      "Developing scalable software applications with expertise in Java, Spring Boot, and full-stack technologies.",
     href: "",
   },
   {
     num: "03",
-    title: "Software Development",
+    title: "Machine Learning",
     description:
-      "lalalhd ahaha anaha ahanaha ahah ah some decription leit aalhahd",
+      "Applying machine learning to enhance applications with intelligent, data-driven features using Python.",
     href: "",
   },
   {
     num: "04",
-    title: "Project Management",
+    title: "Open Source Contributions",
     description:
-      "lalalhd ahaha anaha ahanaha ahah ah some decription leit aalhahd",
+      "Actively contributing to open-source projects, improving code quality and collaborating with global teams.",
     href: "",
   },
 ];
