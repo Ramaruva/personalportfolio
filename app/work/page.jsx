@@ -21,66 +21,169 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "Project 1",
+    category: "Java FullStack ",
+    title: "Quickhire",
     description:
-      "Hi ahp aja aha dakn aHNIHsc zHuasycn zLHZV zjhxl xzhjm hzjkczzm,cnnk c.",
+      "QuickHire is a Java-based web application that connects employers with employees for short-term employment opportunities, streamlining the hiring process for temporary roles.",
     stack: [
       {
-        name: "Html 5",
+        name: "Html5",
       },
       {
-        name: "Css 3",
+        name: "Css3",
       },
       {
         name: "Javascript",
       },
+      {
+        name: "React",
+      },
+      {
+        name: "Redux",
+      },
+      {
+        name: "TailwindCSS",
+      },
+      {
+        name: "Java",
+      },
+      {
+        name: "Springboot",
+      },
+      {
+        name: "Mysql",
+      },
     ],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    image: "/assets/work/quickhirethumb.png",
+    live: null,
+    github: "https://github.com/Ramaruva/QuickHire_fullstackProject",
   },
   {
     num: "02",
     category: "fullstack",
-    title: "Project 2",
+    title: "BudgetBuddy",
     description:
-      "Hi ahp aja aha dakn aHNIHsc zHuasycn zLHZV zjhxl xzhjm hzjkczzm,cnnk c.",
+      "BudgetBuddy is a web application designed to manage personal finances and streamline bill splitting with friends, ensuring smooth and organized transactions.",
     stack: [
       {
-        name: "Next.js",
+        name: "Html5",
       },
       {
-        name: "Tailwind.css",
+        name: "Css3",
       },
       {
-        name: "Node.js",
+        name: "Javascript",
+      },
+      {
+        name: "React",
+      },
+      {
+        name: "Redux",
+      },
+      {
+        name: "TailwindCSS",
+      },
+      {
+        name: "Java",
+      },
+      {
+        name: "Springboot",
+      },
+      {
+        name: "PostgreSQL",
       },
     ],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    image: "/assets/work/budgetbuddythumb.png",
+    live: null,
+    github: "https://github.com/gowthamdongari/budgetbuddy_backend",
   },
   {
     num: "03",
     category: "frontend",
-    title: "Project 3",
+    title: "Curious_Stoop_Sale",
     description:
-      "Hi ahp aja aha dakn aHNIHsc zHuasycn zLHZV zjhxl xzhjm hzjkczzm,cnnk c.",
+      "CuriousStoopSale is a hackathon project where a team of two developed a webpage for a Brooklyn stoop sale within 24 hours, providing a platform for local sales and interactions.",
     stack: [
       {
-        name: "Next.js",
+        name: "React",
       },
       {
-        name: "Css 3",
+        name: "Redux",
       },
       {
         name: "Tailwind",
       },
+      {
+        name: "Javascript",
+      },
+      {
+        name: "Google Maps",
+      },
     ],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    image: "/assets/work/stoopsalethumb.png",
+    live: "https://team-curious-stoop-sale.vercel.app/",
+    github: "https://github.com/gowthamdongari/Team_Curious_Stoop_Sale",
+  },
+  {
+    num: "04",
+    category: "frontend",
+    title: "getHarvestClone",
+    description:
+      "GetHarvest is a clone of the original time-tracking and project management tool, developed remotely by a team of 4 during Masai Bootcamp training.",
+    stack: [
+      {
+        name: "React",
+      },
+      {
+        name: "Redux",
+      },
+      {
+        name: "Tailwind",
+      },
+      {
+        name: "Javascript",
+      },
+      {
+        name: "Google Maps",
+      },
+      {
+        name: "firebase",
+      },
+    ],
+    image: "/assets/work/getharvestclonethumb.png",
+    github: "https://github.com/pujarianil4/getharvest_clone",
+  },
+  {
+    num: "05",
+    category: "frontend",
+    title: "FrontendmastersClone",
+    description:
+      "FrontendMasters is a clone of the popular learning platform FrontendMaster's.com offering courses taught by top industry professionals, focusing on cutting-edge frontend technologies.",
+    stack: [
+      {
+        name: "React",
+      },
+      {
+        name: "Redux",
+      },
+      {
+        name: "Javascript",
+      },
+      {
+        name: "styled components",
+      },
+      {
+        name: "firebase",
+      },
+      {
+        name: "stripe",
+      },
+      {
+        name: "d3-ease",
+      },
+    ],
+    image: "/assets/work/frontendmastersthumb.png",
+    github: "https://github.com/Ramaruva/FrontendMasters_clone",
   },
 ];
 const Work = () => {
@@ -107,20 +210,20 @@ const Work = () => {
           >
             <div className="flex flex-col gap-[30px] h-[50%] ">
               {/* outline num */}
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+              <div className="text-8xl leading-none font-extrabold text-transparent text-outline text-wrap">
                 {project?.num}
               </div>
-              {/* project category */}
+              {/* project title */}
               <h2
                 className="text-[42px] font-bold leading-none text-white
-              group-hover:text-accent transition-all duration-500 capitalize"
+              group-hover:text-accent transition-all duration-500 capitalize sm:text-[32px] break-words"
               >
-                {project.category} Project
+                {project.title}
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 flex-wrap">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
@@ -135,26 +238,37 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live button */}
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger
-                        className="w-[70px] h-[70px]  rounded-full
-                           bg-white/5 flex justify-center items-center group"
-                      >
-                        <BsArrowUpRight
-                          className="text-white text-3xl
-                               group-hover:text-accent"
-                        />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project?.live && (
+                  <Link
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger
+                          className="w-[70px] h-[70px]  rounded-full
+                               bg-white/5 flex justify-center items-center group"
+                        >
+                          <BsArrowUpRight
+                            className="text-white text-3xl
+                                   group-hover:text-accent"
+                          />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+
                 {/* github project button */}
-                <Link href={project.github}>
+                <Link
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger
@@ -199,7 +313,8 @@ const Work = () => {
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover"
+                          className="object-cover max-w-full"
+                          alt="project thumb"
                         />
                       </div>
                     </div>
