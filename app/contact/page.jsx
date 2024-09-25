@@ -56,8 +56,8 @@ const Contact = () => {
                 Spring Boot, React, and machine learning, I am committed to
                 delivering high-quality, innovative products. I actively
                 contribute to open-source projects and thrive in collaborative
-                environments. Let&apos;s work together to bring your ideas to life
-                with precision and creativity.
+                environments. Let&apos;s work together to bring your ideas to
+                life with precision and creativity.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
