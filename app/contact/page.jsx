@@ -19,7 +19,7 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "+1 940 843 1082",
+    description: "+1(940)843-1082",
   },
   {
     icon: <FaEnvelope />,
@@ -29,7 +29,7 @@ const info = [
   {
     icon: <FaMapMarkedAlt />,
     title: "Address",
-    description: "Dallas, 8245 southwestern blvd",
+    description: "Dallas,Texas, USA",
   },
 ];
 
@@ -48,12 +48,16 @@ const Contact = () => {
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">Let's work together</h3>
+              <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptas, magnam quo! Necessitatibus aliquid fuga odio
-                repudiandae, nam facilis, iusto asperiores qui libero dolor
-                autem voluptates, nobis optio natus magni perferendis?
+                As a passionate software engineer with over 3 years of
+                experience in full-stack development, I specialize in building
+                scalable web and software solutions. With expertise in Java,
+                Spring Boot, React, and machine learning, I am committed to
+                delivering high-quality, innovative products. I actively
+                contribute to open-source projects and thrive in collaborative
+                environments. Let&apos;s work together to bring your ideas to
+                life with precision and creativity.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
