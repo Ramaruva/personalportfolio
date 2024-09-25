@@ -1,8 +1,26 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaJava,
+  FaPython,
+  FaAngular,
+  FaDocker,
+  FaGitAlt
+} from "react-icons/fa";
+import { TbBrandRedux } from "react-icons/tb";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiSpringboot,
+  SiMysql,
+  SiMongodb,
+} from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -17,7 +35,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 const about = {
   title: "About me",
   description:
-    "I am ramakrishna software engineer studying i smu looking for jobs ",
+    "I am Ramakrishna Aruva, a passionate software engineer with over 3 years of experience in full-stack development. Currently pursuing my Master’s in Software Engineering at Southern Methodist University, I specialize in building scalable, innovative solutions using cutting-edge technologies like Java, Spring Boot, React, and Machine Learning. I’m also an active open-source contributor, collaborating with global teams to improve code quality and project scalability. I’m always eager to learn, explore new challenges, and contribute to impactful projects.",
   info: [
     {
       fieldName: "Name",
@@ -50,32 +68,28 @@ const about = {
 const experienceData = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
-  description: "haha aha ahaha aha aha aha aha ahahah adjaf,muO a hsajknc",
+  description:
+    "Experienced in developing scalable web applications and enhancing system performance using modern frameworks like Angular, Java, and Spring Boot.",
   items: [
     {
-      company: "Ivy Comptech ",
+      company: "One Community Global",
       position: "Software engineer",
-      duration: "2021-2023",
+      duration: "May 2024-Present",
+    },
+    {
+      company: "A-Lec-SMU",
+      position: "Graduate Tutor",
+      duration: "Septemeber 2023-Present",
     },
     {
       company: "Ivy Comptech ",
       position: "Software engineer",
-      duration: "2021-2023",
+      duration: "August 2022- July 2023",
     },
     {
       company: "Ivy Comptech ",
-      position: "Software engineer",
-      duration: "2021-2023",
-    },
-    {
-      company: "Ivy Comptech ",
-      position: "Software engineer",
-      duration: "2021-2023",
-    },
-    {
-      company: "Ivy Comptech ",
-      position: "Software engineer",
-      duration: "2021-2023",
+      position: "Trainee Software engineer",
+      duration: "Septemeber 2021- August 2022",
     },
   ],
 };
@@ -84,27 +98,23 @@ const experienceData = {
 const educationData = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description: "haha aha ahaha aha aha aha aha ahahah adjaf,muO a hsajknc",
+  description:
+    "Master's in Software Engineering from Southern Methodist University, with a Bachelor's in Electronics and Communication Engineering, specializing in full-stack development and machine learning.",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Software engineer",
-      duration: "2021-2023",
+      institution: "Southern Methodist University",
+      degree: "Master's Software engineering",
+      duration: "August 2023-May 2025",
     },
     {
-      institution: "Online Course Platform",
-      degree: "Software engineer",
-      duration: "2021-2023",
+      institution: "Masai School",
+      degree: "Full Stack Web Development",
+      duration: "January 2021-August 2021",
     },
     {
-      institution: "Online Course Platform",
-      degree: "Software engineer",
-      duration: "2021-2023",
-    },
-    {
-      institution: "Online Course Platform",
-      degree: "Software engineer",
-      duration: "2021-2023",
+      institution: "CMR College of Engineering & Technology",
+      degree: "B.tech,Electronics and communication",
+      duration: "August 2016- Septemeber 2020",
     },
   ],
 };
@@ -112,7 +122,8 @@ const educationData = {
 //skills data
 const skills = {
   title: "My skills",
-  description: "ho alao rlalaor alalor amlaa dkaka ajdjdao roa akdhaha adajaja",
+  description:
+    "Proficient in Java, Python, JavaScript, React.js, Angular, Node.js, Spring Boot, and experienced with databases like MySQL and MongoDB, as well as DevOps tools including Docker and AWS.",
   skillist: [
     {
       icon: <FaHtml5 />,
@@ -142,6 +153,42 @@ const skills = {
       icon: <FaNodeJs />,
       name: "node.js",
     },
+    {
+      icon: <FaJava />,
+      name: "Java",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
+    },
+    {
+      icon: <TbBrandRedux />,
+      name: "Redux",
+    },
+    {
+      icon: <FaAngular />,
+      name: "Angular",
+    },
+    {
+      icon: <SiSpringboot />,
+      name: "SpringBoot",
+    },
+    {
+      icon: <SiMysql />,
+      name: "Mysql",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "Mongodb",
+    },
+    {
+      icon: <FaDocker />,
+      name: "Docker",
+    },
+    {
+      icon:<FaGitAlt/>,
+      name:"Git"
+    }
   ],
 };
 
@@ -172,7 +219,8 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experienceData.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+
+                <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0">
                   {experienceData.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -205,7 +253,7 @@ const Resume = () => {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{educationData.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0">
                   {educationData.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -240,36 +288,38 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
-                <ul
-                  className="grid grid-cols-2 sm:grid-cols-3  gap-4
+                <ScrollArea className="h-[400px]">
+                  <ul
+                    className="grid grid-cols-2 sm:grid-cols-3  gap-4
                  md:grid-cols-4 xl:gap-[30px]"
-                >
-                  {skills.skillist.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger
-                              className="w-full h-[150px] bg-[#232329] rounded-xl 
+                  >
+                    {skills.skillist.map((skill, index) => {
+                      return (
+                        <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger
+                                className="w-full h-[150px] bg-[#232329] rounded-xl 
                             flex justify-center items-center group"
-                            >
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                              >
+                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                  {skill.icon}
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize">{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
             {/* about */}
@@ -279,7 +329,7 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[900px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul
