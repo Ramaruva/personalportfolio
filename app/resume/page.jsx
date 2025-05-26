@@ -35,7 +35,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 const about = {
   title: "About me",
   description:
-    "I am Ramakrishna Aruva, a passionate software engineer with over 3 years of experience in full-stack development. Currently pursuing my Master’s in Software Engineering at Southern Methodist University, I specialize in building scalable, innovative solutions using cutting-edge technologies like Java, Spring Boot, React, and Machine Learning. I’m also an active open-source contributor, collaborating with global teams to improve code quality and project scalability. I’m always eager to learn, explore new challenges, and contribute to impactful projects.",
+    "I’m Ramakrishna Aruva, a full-stack software engineer with 4+ years of experience building scalable web apps using Java, Spring Boot, React, and AWS. I hold a Master’s in Software Engineering from Southern Methodist University and specialize in designing performant backend systems and intuitive frontends. I’m passionate about clean architecture, real-time systems, and contributing to mission-driven teams that solve meaningful problems.",
   info: [
     {
       fieldName: "Name",
@@ -47,7 +47,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "3+ years",
+      fieldValue: "4+ years",
     },
     {
       fieldName: "Mail",
@@ -79,18 +79,23 @@ const experienceData = {
     {
       company: "A-Lec-SMU",
       position: "Graduate Tutor",
-      duration: "Septemeber 2023-Present",
+      duration: "Septemeber 2023-May 2025",
     },
     {
       company: "Ivy Comptech ",
-      position: "Software engineer",
-      duration: "August 2022- July 2023",
+      position: "Software Engineer",
+      duration: "Septemeber 2021-July 2023",
     },
     {
-      company: "Ivy Comptech ",
-      position: "Trainee Software engineer",
-      duration: "Septemeber 2021- August 2022",
+      company:"Urban Rebox IT",
+      position:"Junior Software Engineer",
+      duration:"August 2020-June 2021"
     },
+    {
+      company:"Urban Rebox IT",
+      position:"Software Engineer Intern",
+      duration:"August 2019-May 2020"
+    }
   ],
 };
 
