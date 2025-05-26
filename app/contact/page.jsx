@@ -50,7 +50,7 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-white/60">
-                As a passionate software engineer with over 3 years of
+                As a passionate software engineer with over 4 years of
                 experience in full-stack development, I specialize in building
                 scalable web and software solutions. With expertise in Java,
                 Spring Boot, React, and machine learning, I am committed to
